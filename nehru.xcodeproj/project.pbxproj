@@ -32,6 +32,16 @@
 		8447A6661846F718007A0472 /* nSubCat.m in Sources */ = {isa = PBXBuildFile; fileRef = 8447A6651846F718007A0472 /* nSubCat.m */; };
 		8447A6691846F725007A0472 /* nMainCat.m in Sources */ = {isa = PBXBuildFile; fileRef = 8447A6681846F725007A0472 /* nMainCat.m */; };
 		8447A66B18474580007A0472 /* whiteBckg.png in Resources */ = {isa = PBXBuildFile; fileRef = 8447A66A18474580007A0472 /* whiteBckg.png */; };
+		846213E6184C3FF6007944EB /* ColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846213E5184C3FF6007944EB /* ColorViewController.m */; };
+		846213E9184C4A0D007944EB /* reveal-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 846213E7184C4A0D007944EB /* reveal-icon.png */; };
+		846213EA184C4A0D007944EB /* reveal-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 846213E8184C4A0D007944EB /* reveal-icon@2x.png */; };
+		846213ED184C4BD2007944EB /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846213EC184C4BD2007944EB /* MapViewController.m */; };
+		84621437184C6E93007944EB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84621436184C6E93007944EB /* SWRevealViewController.m */; };
+		8462934D184A011A0063C016 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8462934C184A011A0063C016 /* MenuViewController.m */; };
+		E7092989184DAB8100DD8C7D /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7092987184DAB8100DD8C7D /* ProductDetailViewController.m */; };
+		E709298D184DB8F800DD8C7D /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = E709298C184DB8F800DD8C7D /* UIActionSheet+Blocks.m */; };
+		E7092991184DB96A00DD8C7D /* ProductListingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E709298F184DB96A00DD8C7D /* ProductListingViewController.m */; };
+		E7689765184D15CD00BCEB61 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7689764184D15CD00BCEB61 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +91,23 @@
 		8447A6671846F725007A0472 /* nMainCat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nMainCat.h; sourceTree = "<group>"; };
 		8447A6681846F725007A0472 /* nMainCat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = nMainCat.m; sourceTree = "<group>"; };
 		8447A66A18474580007A0472 /* whiteBckg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteBckg.png; sourceTree = "<group>"; };
+		846213E4184C3FF6007944EB /* ColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorViewController.h; sourceTree = "<group>"; };
+		846213E5184C3FF6007944EB /* ColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorViewController.m; sourceTree = "<group>"; };
+		846213E7184C4A0D007944EB /* reveal-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-icon.png"; sourceTree = "<group>"; };
+		846213E8184C4A0D007944EB /* reveal-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-icon@2x.png"; sourceTree = "<group>"; };
+		846213EB184C4BD2007944EB /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		846213EC184C4BD2007944EB /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		84621435184C6E93007944EB /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		84621436184C6E93007944EB /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		8462934B184A011A0063C016 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		8462934C184A011A0063C016 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		E7092986184DAB8100DD8C7D /* ProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailViewController.h; sourceTree = "<group>"; };
+		E7092987184DAB8100DD8C7D /* ProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailViewController.m; sourceTree = "<group>"; };
+		E709298B184DB8F800DD8C7D /* UIActionSheet+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+Blocks.h"; sourceTree = "<group>"; };
+		E709298C184DB8F800DD8C7D /* UIActionSheet+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+Blocks.m"; sourceTree = "<group>"; };
+		E709298E184DB96A00DD8C7D /* ProductListingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListingViewController.h; sourceTree = "<group>"; };
+		E709298F184DB96A00DD8C7D /* ProductListingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListingViewController.m; sourceTree = "<group>"; };
+		E7689764184D15CD00BCEB61 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7689765184D15CD00BCEB61 /* MapKit.framework in Frameworks */,
 				841DDE551845D643007D1F5B /* CoreGraphics.framework in Frameworks */,
 				841DDE571845D643007D1F5B /* UIKit.framework in Frameworks */,
 				841DDE531845D643007D1F5B /* Foundation.framework in Frameworks */,
@@ -132,6 +160,7 @@
 		841DDE511845D643007D1F5B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E7689764184D15CD00BCEB61 /* MapKit.framework */,
 				841DDE521845D643007D1F5B /* Foundation.framework */,
 				841DDE541845D643007D1F5B /* CoreGraphics.framework */,
 				841DDE561845D643007D1F5B /* UIKit.framework */,
@@ -148,7 +177,20 @@
 				841DDE641845D643007D1F5B /* Main.storyboard */,
 				841DDE671845D643007D1F5B /* nViewController.h */,
 				841DDE681845D643007D1F5B /* nViewController.m */,
+				8462934B184A011A0063C016 /* MenuViewController.h */,
+				8462934C184A011A0063C016 /* MenuViewController.m */,
+				846213E4184C3FF6007944EB /* ColorViewController.h */,
+				846213E5184C3FF6007944EB /* ColorViewController.m */,
+				846213EB184C4BD2007944EB /* MapViewController.h */,
+				846213EC184C4BD2007944EB /* MapViewController.m */,
+				E709298E184DB96A00DD8C7D /* ProductListingViewController.h */,
+				E709298F184DB96A00DD8C7D /* ProductListingViewController.m */,
+				E7092986184DAB8100DD8C7D /* ProductDetailViewController.h */,
+				E7092987184DAB8100DD8C7D /* ProductDetailViewController.m */,
+				E709298B184DB8F800DD8C7D /* UIActionSheet+Blocks.h */,
+				E709298C184DB8F800DD8C7D /* UIActionSheet+Blocks.m */,
 				841DDE6A1845D643007D1F5B /* Images.xcassets */,
+				846293471849F8EE0063C016 /* ThirdPartyClass */,
 				841DDE591845D643007D1F5B /* Supporting Files */,
 			);
 			path = nehru;
@@ -157,6 +199,8 @@
 		841DDE591845D643007D1F5B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				846213E7184C4A0D007944EB /* reveal-icon.png */,
+				846213E8184C4A0D007944EB /* reveal-icon@2x.png */,
 				841DDE5A1845D643007D1F5B /* nehru-Info.plist */,
 				841DDE5B1845D643007D1F5B /* InfoPlist.strings */,
 				841DDE5E1845D643007D1F5B /* main.m */,
@@ -277,6 +321,15 @@
 			name = "Sub Category";
 			sourceTree = "<group>";
 		};
+		846293471849F8EE0063C016 /* ThirdPartyClass */ = {
+			isa = PBXGroup;
+			children = (
+				84621435184C6E93007944EB /* SWRevealViewController.h */,
+				84621436184C6E93007944EB /* SWRevealViewController.m */,
+			);
+			name = ThirdPartyClass;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -359,6 +412,8 @@
 				841DDE8C1845D8F3007D1F5B /* bckgImage1.png in Resources */,
 				841DDE8E1845D8F3007D1F5B /* bckgImage3.png in Resources */,
 				841DDE8F1845D8F3007D1F5B /* bckgImage4.png in Resources */,
+				846213E9184C4A0D007944EB /* reveal-icon.png in Resources */,
+				846213EA184C4A0D007944EB /* reveal-icon@2x.png in Resources */,
 				841DDE6B1845D643007D1F5B /* Images.xcassets in Resources */,
 				841DDE5D1845D643007D1F5B /* InfoPlist.strings in Resources */,
 				841DDE661845D643007D1F5B /* Main.storyboard in Resources */,
@@ -380,14 +435,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84621437184C6E93007944EB /* SWRevealViewController.m in Sources */,
 				8447A65B1846F2EA007A0472 /* nSubCatCell.m in Sources */,
 				841DDE691845D643007D1F5B /* nViewController.m in Sources */,
+				E7092991184DB96A00DD8C7D /* ProductListingViewController.m in Sources */,
+				846213E6184C3FF6007944EB /* ColorViewController.m in Sources */,
 				8447A65E1846F2FB007A0472 /* nMainCatCell.m in Sources */,
 				8447A6611846F358007A0472 /* nUserSignUp.m in Sources */,
 				8447A6661846F718007A0472 /* nSubCat.m in Sources */,
 				841DDEA6184601D3007D1F5B /* nUserSignIn.m in Sources */,
+				846213ED184C4BD2007944EB /* MapViewController.m in Sources */,
 				841DDE5F1845D643007D1F5B /* main.m in Sources */,
 				8447A6691846F725007A0472 /* nMainCat.m in Sources */,
+				E7092989184DAB8100DD8C7D /* ProductDetailViewController.m in Sources */,
+				8462934D184A011A0063C016 /* MenuViewController.m in Sources */,
+				E709298D184DB8F800DD8C7D /* UIActionSheet+Blocks.m in Sources */,
 				841DDE631845D643007D1F5B /* nAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,6 +575,7 @@
 		841DDE821845D643007D1F5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -527,6 +590,7 @@
 		841DDE831845D643007D1F5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

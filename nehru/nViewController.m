@@ -56,10 +56,9 @@
 }
 
 -(IBAction)goToBrowse:(id)sender{
-    
     dispatch_suspend(nTimer);
     isComingBack=TRUE;
-    [self performSegueWithIdentifier:@"gotToBrowse" sender:self];
+//    [self performSegueWithIdentifier:@"gotToBrowse" sender:self];
 }
 
 - (void)didReceiveMemoryWarning

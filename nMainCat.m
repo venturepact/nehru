@@ -30,17 +30,15 @@
     // set Inset of ios 6 and 7
     if([[[UIDevice currentDevice]systemVersion]floatValue]==6.1
        || [[[UIDevice currentDevice]systemVersion]floatValue]==6.0){
-        
     }
     else {
-        
         nMainCatTable.separatorInset=UIEdgeInsetsZero;
     }
-    
     // set array of the image and text
     arrOfMainCatImg=[NSArray arrayWithObjects:@"bckgImage1.png",@"bckgImage2.png",@"bckgImage3.png",@"bckgImage4.png",@"bckgImage1.png",@"bckgImage2.png", @"bckgImage3.png",@"bckgImage4.png",nil];
     arrOfMainCatText=[NSArray arrayWithObjects:@"Casual",@"Formal",@"Casual",@"Formal",@"Casual",@"Formal",@"Casual",@"Formal", nil];
 }
+
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
