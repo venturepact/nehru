@@ -1,0 +1,30 @@
+body{ margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; color:#999; background:#f2f2f2; }
+#wrapper{ margin:0 auto; width:998px; background:#fff;}
+.main_outer{ float:left; width:100%; background:#fff;  box-shadow:1px 1px 3px #ccc; }
+.banner{ float:left; width:98%; padding:10px; color:#666; font-size:24px; margin-bottom:10px; }
+.form_main_outer{ float:left; width:98%; padding:10px; }
+.form_left{ float:left; width:465px; padding:10px; padding-bottom:0px;  }
+.form_right{ float:left; width:460px; padding:10px; margin-left:10px;  padding-bottom:0px;}
+.textarea_outer{ float:left; width:100%; margin-bottom:15px; }
+.text_lable{ float:left; min-width:25%; margin-right:10px; padding:5px; color:#999; font-size:18px; }
+.text_area{ float:left; width:250px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; padding:3px; border:1px solid #CCC; height:25px; color:#999; box-shadow: 0 1px 3px #ccc inset; }
+.edu_outer{ float:left; width:100%; }
+.edu_lable{ float:left; min-width:98%; margin-right:10px; margin-top:10px; padding:5px; padding-left:10px; color:#999; font-size:18px; margin-bottom:10px; }
+.edu_text_outer{ float:left; width:99%; background:#f2f2f2; padding:20px 5px 15px 5px; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; }
+.text_area_edu{ float:left; margin-left:20px; width:285px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; padding:3px; border:1px solid #CCC; height:25px; color:#999; box-shadow: 0 1px 3px #ccc inset; }
+.text_edu_main{ float:left; width:100%; margin-top:5px; margin-bottom:5px;}
+.add_link{ float:right; text-decoration:none; color:#999; margin-right:25px;}
+.add_link:hover{#000; text-decoration:underline;}
+.text_area_exp{ float:left; margin-left:10px; width:200px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; padding:3px; border:1px solid #CCC; height:25px; color:#999; box-shadow: 0 1px 3px #ccc inset; }
+.w150{ width:150px;}
+.w120{ width:120px; margin-right:5px; }
+.company_right{ float:left; width:450px; padding:10px; margin-left:10px;  padding-bottom:0px;}
+.textarea_detail{ float:left; width:250px; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; padding:3px; border:1px solid #CCC; height:65px; color:#999; box-shadow: 0 1px 3px #ccc inset;  }
+.company_main{ float:left; width:100%; margin-top:5px; margin-bottom:5px; border-bottom:1px solid #fff;}
+.main_outer_link{ float:left; width:100%; margin-top:12px; border:1px solid #e2e2e2;}
+.main_outer_skill{ float:left; width:100%; margin-top:12px; }
+.skill_lable{ float:left; min-width:100%; margin-right:10px; padding:5px; margin-bottom:10px; color:#999; font-size:18px; }
+.skill_outer{ float:left; width:100%; margin-bottom:10px;}
+.chk_text{ float:left;font-size:11px; color:#999; margin-left:15px; margin-top:4px; margin-right:3px;}
+.chk_box{ float:left; margin-top:3px;}
+.w180{ width:180px;}
