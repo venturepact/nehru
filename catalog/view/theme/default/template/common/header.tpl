@@ -110,5 +110,6 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
                      </ul> 
                 </div>
                 </div>                
-                <!--Text Section -->
+                <!--Text Section -->             
                 <div id="main_content">
+             
