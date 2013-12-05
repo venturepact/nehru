@@ -1,0 +1,2 @@
+2013-12-02 8:32:13 - PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in D:\xampp\htdocs\nehru\system\library\image.php on line 109
+2013-12-02 8:32:13 - PHP Warning:  imagedestroy() expects parameter 1 to be resource, null given in D:\xampp\htdocs\nehru\system\library\image.php on line 110
