@@ -33,7 +33,7 @@ p {
 	margin-bottom: 20px;
 }
 a, a:visited, a b {
-	color: #38B0E3;
+	color: #f00;
 	text-decoration: underline;
 	cursor: pointer;
 }
@@ -165,11 +165,11 @@ label {
 	color: #38B0E3;
 	text-decoration: none;
 }
-#header #cart .heading a span {
+/*#header #cart*/ .heading a span {
 	background: #FFFFFF url('../image/arrow-down.png') 100% 50% no-repeat;
 	padding-right: 15px;
 }
-#header #cart .content {
+/*#header #cart*/ .content {
 	clear: both;
 	display: none;
 	position: relative;
@@ -201,7 +201,7 @@ label {
 	-khtml-border-radius: 7px 7px 0px 0px;
 	border-radius: 7px 7px 0px 0px;
 }
-#header #cart.active .content {
+/*#header #cart*/.active .content {
 	display: block;
 }
 .mini-cart-info table {
@@ -213,7 +213,7 @@ label {
 	color: #000;
 	vertical-align: top;
 	padding: 10px 5px;
-	border-bottom: 1px solid #EEEEEE;
+	border-bottom: 1px solid #CDC49D ;
 }
 .mini-cart-info .image {
 	width: 1px;

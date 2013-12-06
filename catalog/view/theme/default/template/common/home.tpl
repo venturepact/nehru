@@ -1,7 +1,6 @@
 <?php echo $header; ?>
 <link rel="stylesheet" href="catalog/view/theme/default/stylesheet/fractionslider.css" type="text/css" />
-<script src="catalog/view/javascript/jquery.min.js" type="text/javascript" /></script>
-<script src="catalog/view/javascript/jquery-1.9.0.min.js" type="text/javascript" charset="utf-8"></script>
+
 <script src="catalog/view/javascript/main.js" type="text/javascript" charset="utf-8"></script>
 <script src="catalog/view/javascript/jquery.fractionslider.js" type="text/javascript" charset="utf-8"></script>
 <script>

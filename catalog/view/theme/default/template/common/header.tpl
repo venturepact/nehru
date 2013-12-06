@@ -16,6 +16,8 @@
 <?php foreach ($links as $link) { ?>
 <link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
 <?php } ?>
+
+
 <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/style.css" />
 <?php foreach ($styles as $style) { ?>
 <link rel="<?php echo $style['rel']; ?>" type="text/css" href="<?php echo $style['href']; ?>" media="<?php echo $style['media']; ?>" />
@@ -100,6 +102,16 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
                 }
                 ?></ul>
                 </div>
+                <div class="cart_outerr">
+                	<?php echo $cart; ?>
+                    <div id="welcome">
+                        <?php if (!$logged) { ?>
+                        <?php echo $text_welcome; ?>
+                        <?php } else { ?>
+                        <?php echo $text_logged; ?>
+                        <?php } ?>
+                      </div>
+                </div>
                 <div id="nav_outer_right">
                     <ul class="right_head_nav">                    
                          <li><a href="<?php echo $home; ?>"><?php echo $text_home; ?></a></li>
@@ -112,4 +124,9 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
                 </div>                
                 <!--Text Section -->             
                 <div id="main_content">
-             
+        <?php if ($error) { ?>
+    
+    <div class="warning"><?php echo $error ?><img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>
+    
+<?php } ?>
+<div id="notification"></div>     

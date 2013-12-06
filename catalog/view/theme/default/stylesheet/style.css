@@ -20,7 +20,7 @@ body{ margin:0; padding:0; font-size:12px; background:url(../../../../../image/d
 #mid_outer{ float:left; width:100%; min-height:610px;  }
 #wrapper{ margin:0 auto; width:998px;}
 .middle_container{ float:left; width:998px;}
-#banner{ float:left; width:100%;}
+#banner{ float:left; position:relative; width:100%;}
 #logo_outer{ float:left; width:208px; }
 #logo_outer img{ border:0px;}
 #right_border{ float:left; width:1px; background:#3d2c2c; margin-top:15px; min-height:60px; }
@@ -789,3 +789,229 @@ margin-left:5px;
 .sort select,.limit select{font-family: 'calibri';padding:3px;border:0;margin-right:3px;}
 .product-compare a{color: #3D2C2C;font-family: 'calibri';font-size: 13px;padding-bottom: 10px;text-decoration: none;}
 .product-compare a:hover{color:#000;text-decoration:underline;}
+
+/*sahil code start */
+.cart_outerr
+{
+	margin-right: 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+#cart
+{
+	float:left;
+	width:auto;
+}
+.heading
+{
+    float: right;
+    padding-left: 14px;
+    padding-right: 14px;
+    position: relative;
+    z-index: 1;
+}
+.heading h4
+{
+	color: #000000;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.heading a
+{
+    color: #FF0000;
+    cursor: pointer;
+    float: left;
+    text-decoration: none;
+    width: 100%;
+}
+.heading a span
+{
+    background: url("../image/arrow-down.png") no-repeat scroll 96% 50% ;
+    padding-right: 15px;
+	float:left;
+	min-width:92px;
+}
+.content
+{
+	background: none repeat scroll 0 0 #EDE7D4;
+    border:1px solid #CDC49D ;
+	border-top:none;
+    border-radius: 0;
+    box-shadow: none;
+    clear: both;
+    display: none;
+    min-height: 150px;
+    padding: 8px;
+    position: relative;
+    left:122px;
+    top: -11px;
+    z-index: 99;
+}
+.content a
+{
+	color:#f00;
+	text-decoration:underline;
+}
+.content a:hover{
+	text-decoration:none;
+}
+.empty
+{
+    padding-top: 50px;
+    text-align: center;
+}
+#welcome
+{
+	float: left;
+    margin-left: 10px;
+    margin-top: 8px;
+    width: auto;
+}
+#welcome a
+{
+	color:#f00;
+}
+#welcome a:hover
+{
+	text-decoration:none;
+}
+.mini-cart-info td 
+{
+	color: #000;
+	vertical-align: top;
+	padding: 10px 5px;
+	border-bottom: 1px solid #CDC49D ;
+}
+#cart {
+	position: absolute;
+	top: 0px;
+	right: 270px;
+	z-index: 9;
+	width: 100%;
+}
+.heading {
+	border: 1px solid rgba(0, 0, 0, 0);
+    float: right;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 5px;
+    position: relative;
+    right: 3px;
+    top: -10px;
+    z-index: 1;
+}
+.heading h4 {
+	color: #333333;
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-bottom: 3px;
+}
+
+.active .heading {
+	background: none repeat scroll 0 0 #EDE7D4;
+    border:1px solid #CDC49D ;
+	border-top: 1px solid #CDC49D;
+	border-left: 1px solid #CDC49D;
+	border-right: 1px solid #CDC49D;
+	-webkit-border-radius: 7px 7px 0px 0px;
+	-moz-border-radius: 7px 7px 0px 0px;
+	-khtml-border-radius: 7px 7px 0px 0px;
+	border-radius: 7px 7px 0px 0px;
+}
+.active .content {
+	display: block;
+}
+.name a
+{
+	color:#f00;
+	text-decoration:underline;
+}
+
+.name a:hover{
+	color:#f00;
+	text-decoration:none;
+}
+.success {
+    background: url("../image/success.png") no-repeat scroll 10px center rgba(255, 255, 255, 0.5);
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+.mini-cart-info table {
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: 5px;
+}
+.mini-cart-info td {
+	color: #000;
+	vertical-align: top;
+	padding: 10px 5px;
+	border-bottom: 1px solid #CDC49D ;
+}
+.mini-cart-info .image {
+	width: 1px;
+}
+.mini-cart-info .image img {
+	border: 1px solid #EEEEEE;
+	text-align: left;
+}
+.mini-cart-info .name small {
+	color: #666;
+}
+.mini-cart-info .quantity {
+	text-align: right;
+}
+.mini-cart-info td.total {
+	text-align: right;
+}
+.mini-cart-info .remove {
+	text-align: right;
+}
+.mini-cart-info .remove img {
+	cursor: pointer;
+}
+.mini-cart-total {
+	text-align: right;
+}
+.mini-cart-total table {
+	border-collapse: collapse;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+.mini-cart-total td {
+	color: #000;
+	padding: 4px;
+}
+
+.success {
+    background: url("../image/success.png") no-repeat scroll 10px center rgba(255, 255, 255, 0.5);
+    border: 1px solid #999999;
+    border-radius: 5px;
+}
+
+.success, .warning, .attention, .information {
+    border-radius: 5px;
+    color: #555555;
+    margin-bottom: 15px;
+    padding: 10px 10px 10px 33px;
+}
+
+.success .close, .warning .close, .attention .close, .information .close {
+    cursor: pointer;
+    float: right;
+    padding-right: 4px;
+    padding-top: 4px;
+}
+.success a
+{
+	color:#f00;
+}
+.success a:hover
+{
+	text-decoration:none;
+	color:#999;
+}
