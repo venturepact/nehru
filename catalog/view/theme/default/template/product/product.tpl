@@ -1,14 +1,12 @@
 <?php echo $header; ?><?php echo $column_left; ?><?php echo $column_right; ?>
-<div id="content">
-<div class="content_right_box">
-<?php echo $content_top; ?>
-  <div class="breadcrumbs_outer">
+<div id="content"><?php echo $content_top; ?>
+    <div class="breadcrumbs_outer">
     <ul class="breadcrumbs">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
      <?php if($breadcrumb['separator']) echo '<li><span>>></span></li>'; ?><li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
     <?php } ?>
   </ul></div>
-  
+  <div style='width:100%;overflow:hidden;'>&nbsp;</div>
   <div class="product-info">
     <?php if ($thumb || $images) { ?>
     <div class="left">
@@ -230,7 +228,7 @@
           <input type="button" value="<?php echo $button_cart; ?>" id="button-cart" class="button" />
           <span>&nbsp;&nbsp;<?php echo $text_or; ?>&nbsp;&nbsp;</span>
           <span class="links"><a onclick="addToWishList('<?php echo $product_id; ?>');"><?php echo $button_wishlist; ?></a><br />
-            <a onclick="addToCompare('<?php echo $product_id; ?>');"><?php echo $button_compare; ?></a></span>
+            <!--<a onclick="addToCompare('<?php echo $product_id; ?>');"><?php echo $button_compare; ?></a></span>-->
         </div>
         <?php if ($minimum > 1) { ?>
         <div class="minimum"><?php echo $text_minimum; ?></div>
@@ -352,9 +350,7 @@
     <?php } ?>
   </div>
   <?php } ?>
-  <?php echo $content_bottom; ?>
-</div>
-</div>
+  <?php echo $content_bottom; ?></div>
 <script type="text/javascript"><!--
 $(document).ready(function() {
 	$('.colorbox').colorbox({
