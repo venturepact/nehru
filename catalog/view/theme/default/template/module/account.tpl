@@ -1,9 +1,10 @@
 <div class="box">
   <div class="box-heading"><?php echo $heading_title; ?></div>
-  <div class="box-content">
-    <ul>
+  <div class="content_left_box">
+    <ul class="cat_list">
       <?php if (!$logged) { ?>
-      <li><a href="<?php echo $login; ?>"><?php echo $text_login; ?></a> / <a href="<?php echo $register; ?>"><?php echo $text_register; ?></a></li>
+      <li><a href="<?php echo $login; ?>"><?php echo $text_login; ?></a></li>
+      <li><a href="<?php echo $register; ?>"><?php echo $text_register; ?></a></li>
       <li><a href="<?php echo $forgotten; ?>"><?php echo $text_forgotten; ?></a></li>
       <?php } ?>
       <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
@@ -18,9 +19,9 @@
       <li><a href="<?php echo $return; ?>"><?php echo $text_return; ?></a></li>
       <li><a href="<?php echo $transaction; ?>"><?php echo $text_transaction; ?></a></li>
       <li><a href="<?php echo $newsletter; ?>"><?php echo $text_newsletter; ?></a></li>
-      <li><a href="<?php echo $recurring; ?>"><?php echo $text_recurring; ?></a></li>
+      <li <?php if(!$logged) echo "class='last'";?>><a href="<?php echo $recurring; ?>"><?php echo $text_recurring; ?></a></li>
       <?php if ($logged) { ?>
-      <li><a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></li>
+      <li <?php echo "class='last'";?>><a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></li>
       <?php } ?>
     </ul>
   </div>

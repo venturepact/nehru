@@ -232,7 +232,7 @@ em{
 }
 .content_right {
     float: right;
-    width: 20%;
+    width: 18%;
 }
 #content {
     float: left;
@@ -859,6 +859,31 @@ margin-left:5px;
 .content a:hover{
 	text-decoration:none;
 }
+/*.content_cart
+{
+	background: none repeat scroll 0 0 #EDE7D4;
+    border:1px solid #CDC49D ;
+	border-top:none;
+    border-radius: 0;
+    box-shadow: none;
+    clear: both;
+    display: none;
+    min-height: 150px;
+    padding: 8px;
+    position: relative;
+    left:122px;
+    top: -11px;
+    z-index: 99;
+}
+.content_cart a
+{
+	color:#f00;
+	text-decoration:underline;
+}
+.content_cart a:hover{
+	text-decoration:none;
+}*/
+
 .empty
 {
     padding-top: 50px;
@@ -1252,7 +1277,7 @@ margin-left:5px;
 	margin-bottom: 20px;
 }
 .box .box-heading {
-	-webkit-border-radius: 7px 7px 0px 0px;
+	/*-webkit-border-radius: 7px 7px 0px 0px;
 	-moz-border-radius: 7px 7px 0px 0px;
 	-khtml-border-radius: 7px 7px 0px 0px;
 	border-radius: 7px 7px 0px 0px;
@@ -1263,7 +1288,15 @@ margin-left:5px;
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 14px;
-	color: #333;
+	color: #333;*/
+	    background: none repeat scroll 0 0 #9A9384;
+    border: 1px solid #8A8477;
+    color: #FFFFFF;
+    font-family: 'calibri_l';
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0 0 0 5px;
 }
 .box .box-content {
 	background: #FFFFFF;
@@ -1366,6 +1399,7 @@ font-weight:bold;
 color:#3D2C2C;
 text-transform: uppercase;
 padding:6px;
+width:auto;
 }
 #tab-review b{
 font-size:14px;
@@ -1411,3 +1445,530 @@ font-weight:normal;
     font-size: 15px;
     text-decoration: none;}
 .tags a:hover{ text-decoration:underline;}
+.login-content {
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+.login-content .left {
+	float: left;
+	width: 48%;
+}
+.login-content .right {
+	float: right;
+	width: 48%
+}
+.login-content .left .content, .login-content .right .content {
+	min-height: 190px;
+}
+
+#column-right + #content {
+    margin-right: 195px;
+}
+/* content */
+#content .content {
+	padding: 10px;
+	margin-bottom: 20px;
+	display:block;
+	min-height:10px;
+	background:#fff;
+	border:none;
+    float: left;
+    padding: 20px;
+	position:relative;
+	left:0;
+	top:0;
+	width:85%;
+}
+#content .content .left {
+	float: left;
+	width: 49%;
+}
+#content .content .right {
+	float: right;
+	width: 49%;
+}
+#content .content a
+{
+	color:#f00;
+}
+#content .left .content
+{
+	min-height:232px;
+}
+.left .content .button
+{
+	background: none repeat scroll 0 0 #D42D01;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px #999999;
+    color: #FFFFFF !important;
+    cursor: pointer;
+    float: left;
+    font-family: 'calibri_l';
+    font-size: 13px;
+    font-weight: bold;
+    padding: 8px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+	width:auto;
+}
+.left .content .button:hover
+{
+	background: none repeat scroll 0 0 #3D2C2C;
+}
+.left .content p
+{
+	float:left;
+	width:100%;
+	position:static;
+	top:0;
+	left:0px;
+	font-size:14px;
+	padding:0px;
+	margin:0px;
+	margin-bottom:15px;
+	white-space:normal;
+}
+#content .right form
+{
+	margin:0px;
+	float:none;
+}
+.right form .content b
+{
+	font-weight:normal;
+	color: #3D2C2C;
+    font-size: 14px;
+}
+#content .right form .content
+{
+	min-height:232px;
+}
+.right form .content input
+{
+	 background: none repeat scroll 0 0 #E2D4B9;
+    border: 1px solid #CDC49D;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px #ADA47E inset;
+    float: left;
+    padding: 7px;
+    width: 95%;
+	margin-bottom:15px;
+}
+.right form .content a
+{
+	font-size:14px;
+	text-decoration:none;
+}
+.right form .content a:hover
+{
+	text-decoration:underline;
+}
+.right form .content .button
+{
+	background: none repeat scroll 0 0 #D42D01;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px #999999;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: left;
+    font-family: 'calibri_l';
+    font-size: 13px;
+    font-weight: bold;
+    padding: 8px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+	width:auto;
+}
+.right form .content .button:hover
+{
+	background: none repeat scroll 0 0 #3D2C2C;
+}
+.error {
+    color: #FF0000;
+	font-size:12px;
+    display: block;
+}
+
+#content .buttons .left {
+    float: left;
+    font-size: 14px;
+	margin-top:8px;
+}
+#content .buttons .left .button
+{
+	background: none repeat scroll 0 0 #D42D01;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px #999999;
+    color: #FFFFFF !important;
+    cursor: pointer;
+    font-family: 'calibri_l';
+    font-size: 13px;
+    font-weight: bold;
+    padding: 8px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+	width:auto;
+}
+#content .buttons .left .button:hover
+{
+	background: none repeat scroll 0 0 #3D2C2C;
+}
+
+#content form .buttons .right .button
+{
+	background: none repeat scroll 0 0 #D42D01;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px #999999;
+    color: #FFFFFF !important;
+    cursor: pointer;
+    font-family: 'calibri_l';
+    font-size: 13px;
+    font-weight: bold;
+    padding: 8px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+	width:auto;
+}
+#content form .buttons .right .button:hover
+{
+	background: none repeat scroll 0 0 #3D2C2C;
+}
+table.form {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+table.form tr td 
+{
+	color: #3D2C2C;
+    font-size: 14px;
+	height:25px;
+    font-weight: normal;
+}
+table.form tr td input[type=radio] 
+{
+    width: auto;
+}
+
+table.form tr td input 
+{
+	background: none repeat scroll 0 0 #E2D4B9;
+    border: 1px solid #CDC49D;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px #ADA47E inset;
+    padding: 7px;
+    width: 55%;
+}
+table.form tr td select 
+{
+	background: none repeat scroll 0 0 #E2D4B9;
+    border: 1px solid #CDC49D;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px #ADA47E inset;
+    padding: 7px;
+    width: 58%;
+}
+table.form tr td:first-child {
+	width: 150px;
+}
+table.form > * > * > td {
+	color: #000000;
+}
+table.form td {
+	padding: 4px;
+}
+input.large-field, select.large-field {
+	width: 300px;
+}
+table.list {
+	border-collapse: collapse;
+	width: 90%;
+	border-top: 1px solid #DDDDDD;
+	border-left: 1px solid #8A8477;
+	margin-bottom: 20px;
+}
+table.list td {
+	border-right: 1px solid #8A8477;
+	background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 1px solid #8A8477;
+}
+table.list thead td {
+	background-color: #9A9384;
+    border: 1px solid #8A8477;
+    color: #FFFFFF;
+    font-weight: bold;
+	padding: 0px 5px;
+}
+table.list thead td a, .list thead td {
+	text-decoration: none;
+	color: #222222;
+	font-weight: bold;
+}
+table.list tbody td {
+	padding: 0px 5px;
+}
+table.list .left {
+	text-align: left;
+	padding: 7px;
+}
+table.list .right {
+	text-align: right;
+	padding: 7px;
+}
+table.list .center {
+	text-align: center;
+	padding: 7px;
+}
+table.radio {
+	width: 100%;
+	border-collapse: collapse;
+}
+table.radio td {
+	padding: 5px;
+}
+table.radio td label {
+	display: block;
+}
+table.radio tr td:first-child {
+	width: 1px;
+}
+table.radio tr td:first-child input {
+	margin-top: 1px;
+}
+table.radio tr.highlight:hover td {
+	background: #F1FFDD;
+	cursor: pointer;
+}
+.required {
+    color: #FF0000;
+}
+#content form .buttons {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #EEEEEE;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 6px;
+	width:88%;
+	margin-right:80px;
+	float:right;
+}
+#content form .buttons .right
+{
+	float:right;
+	font-size:14px;
+}
+#content form .buttons .right a
+{
+	color:#f00;
+}
+#content form .buttons .right a:hover
+{
+	text-decoration:none;
+}
+
+#content form .buttons .right a b
+{
+	color:#f00;
+	font-weight:normal;
+}
+
+#content form
+{
+    float: none;
+    margin: 0;
+}
+#content .buttons
+{
+	float:left;
+	width:85%;
+	padding:20px;
+	background:#fff;
+}
+#content .buttons .left {
+    float: left;
+    font-size: 14px;
+	margin-top:8px;
+}
+#content .buttons .left .button
+{
+	background: none repeat scroll 0 0 #D42D01;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px #999999;
+    color: #FFFFFF !important;
+    cursor: pointer;
+    font-family: 'calibri_l';
+    font-size: 13px;
+    font-weight: bold;
+    padding: 8px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+	width:auto;
+}
+#content .buttons .left .button:hover
+{
+	background: none repeat scroll 0 0 #3D2C2C;
+}
+#content .buttons .right 
+{
+    float: right;
+    font-size: 14px;
+	margin-top:8px;
+}
+#content .buttons .right a
+{
+	background: none repeat scroll 0 0 #D42D01;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px #999999;
+    color: #FFFFFF !important;
+    cursor: pointer;
+    font-family: 'calibri_l';
+    font-size: 13px;
+    font-weight: bold;
+    padding: 8px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+	width:auto;
+}
+#content .buttons .right a:hover
+{
+	background: none repeat scroll 0 0 #3D2C2C;
+}
+#content .content table tr td a.button
+{
+	background: none repeat scroll 0 0 #D42D01;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px #999999;
+    color: #FFFFFF !important;
+    cursor: pointer;
+    font-family: 'calibri_l';
+    font-size: 11px;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+	width:auto;
+}
+#content .content table tr td a.button:hover
+{
+	background: none repeat scroll 0 0 #3D2C2C;
+}
+/*wishlist css*/
+.wishlist-info
+{
+	float:left;
+	width:90%;
+}
+.wishlist-info table {
+	width: 100%;
+	border-collapse: collapse;
+	border-top: 1px solid #8A8477;
+	border-left: 1px solid #8A8477;
+	border-right: 1px solid #8A8477;
+	margin-bottom: 20px;
+}
+.wishlist-info td {
+	padding: 7px;
+}
+.wishlist-info thead td {
+	color: #fff;
+	font-weight: bold;
+	background-color: #9A9384;
+	border: 1px solid #8A8477;
+}
+.wishlist-info thead .image {
+	text-align: center;
+}
+.wishlist-info thead .name, .wishlist-info thead .model, .wishlist-info thead .stock {
+	text-align: left;
+}
+.wishlist-info thead .quantity, .wishlist-info thead .price, .wishlist-info thead .total, .wishlist-info thead .action {
+	text-align: right;
+}
+.wishlist-info tbody td {
+	vertical-align: top;
+	border-bottom: 1px solid #8A8477;
+	background:#fff;
+}
+.wishlist-info tbody .image img {
+	border: 1px solid #DDDDDD;
+}
+.wishlist-info tbody .image {
+	text-align: center;
+}
+.wishlist-info tbody .name, .wishlist-info tbody .model, .wishlist-info tbody .stock {
+	text-align: left;
+}
+.wishlist-info tbody .quantity, .wishlist-info tbody .price, .wishlist-info tbody .total, .wishlist-info tbody .action {
+	text-align: right;
+}
+.wishlist-info tbody .price s {
+	color: #F00;
+}
+.wishlist-info tbody .action img {
+	cursor: pointer;
+}
+
+.login-content .left {
+	float: left;
+	width: 48%;
+}
+.login-content .right {
+	float: right;
+	width: 48%
+}
+.login-content .left .content, .login-content .right .content {
+	min-height: 190px;
+}
+/*wishlist css*/
+/* orders */
+.order-list {
+	margin-bottom: 10px;
+	float:left;
+	width:90%;
+}
+.order-list .order-id {
+	width: 49%;
+	float: left;
+	margin-bottom: 2px;
+}
+.order-list .order-status {
+	width: 49%;
+	float: right;
+	text-align: right;
+	margin-bottom: 2px;
+}
+.order-list .order-content {
+	padding: 10px;
+	display: inline-block;
+	width:97%;
+	margin-bottom: 20px;
+	background:#EDE7D4;
+	border-top: 1px solid #8A8477;
+	border-bottom: 1px solid #8A8477;
+}
+.order-list .order-content div {
+	float: left;
+	width: 33.3%;
+}
+.order-list .order-info {
+	text-align: right;
+}
+.order-detail {
+	background: #EFEFEF;
+	font-weight: bold;
+}
+.pagination {
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width:92%;
+}
+
+/* orders */

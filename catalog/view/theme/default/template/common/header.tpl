@@ -8,7 +8,7 @@
 <meta name="description" content="<?php echo $description; ?>" />
 <?php } ?>
 <?php if ($keywords) { ?>
-<meta name="keywords" content="<?php echo $keywords; ?>" />
+<meta name="keywords" content="<?php echo $keywords; ?>"0 4/>
 <?php } ?>
 <?php if ($icon) { ?>
 <link href="<?php echo $icon; ?>" rel="icon" />

@@ -1,9 +1,9 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://172.17.60.222/nehru/');
+define('HTTP_SERVER', 'http://localhost/nehru/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://172.17.60.222/nehru/');
+define('HTTPS_SERVER', 'http://localhost/nehru/');
 
 // DIR
 define('DIR_APPLICATION', 'D:\xampp\htdocs\nehru/catalog/');
