@@ -992,7 +992,6 @@ margin-left:5px;
     border: 1px solid #999999;
     border-radius: 5px;
 }
-
 .success, .warning, .attention, .information {
     border-radius: 5px;
     color: #555555;
@@ -1225,12 +1224,12 @@ margin-left:5px;
 	background: #FFFFFF url('../image/tab.png') repeat-x;
 	padding: 7px 15px 6px 15px;
 	float: left;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 13px;
-	font-weight: bold;
+	font-family: 'calibri';
+	font-size: 16px;
+	font-weight: normal;
 	text-align: center;
 	text-decoration: none;
-	color: #000000;
+	color: #3D2C2C;
 	margin-right: 2px;
 	display: none;
 }
@@ -1281,13 +1280,32 @@ margin-left:5px;
 .box-product {
 	width: 100%;
 	overflow: auto;
+	/*margin-left:5px;*/
 }
 .box-product > div {
-	width: 130px;
-	display: inline-block;
-	vertical-align: top;
-	margin-right: 20px;
-	margin-bottom: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 6px;
+    margin-top: 5px;
+    vertical-align: top;
+    width: 102px;
+}
+.box-product a.button{
+    background: none repeat scroll 0 0 #D42D01;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px #999999;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: left;
+    font-family: 'calibri_l';
+    font-size: 13px;
+    font-weight: bold;   
+    padding: 5px 10px;
+    text-decoration: none;
+    text-transform: uppercase;	
+}
+.box-product a.button:hover{
+   background: none repeat scroll 0 0 #000;
 }
 #column-left + #column-right + #content .box-product > div {
 	width: 119px;
@@ -1301,15 +1319,19 @@ margin-left:5px;
 	border: 1px solid #E7E7E7;
 }
 .box-product .name a {
-	color: #38B0E3;
-	font-weight: bold;
+	color: #3D2C2C;
+	font-weight: normal;
 	text-decoration: none;
 	display: block;
+	font-size:14px;
 	margin-bottom: 4px;
+}
+.box-product .name a:hover {
+	text-decoration:underline;
 }
 .box-product .price {
 	display: block;
-	font-weight: bold;
+	font-weight: normal;
 	color: #333333;
 	margin-bottom: 4px;
 }
@@ -1325,9 +1347,67 @@ margin-left:5px;
 	margin-bottom: 4px;
 }
 .tab-content p{
-font-size:13px;
+font-size:14px;
 white-space:normal;
 padding:5px;
 top:auto;
 position:inherit;
+color: #3D2C2C;
+font-family: 'calibri_l';
 }
+.tab-content p strong,.tab-content p b{
+font-size:14px;
+font-weight:bold;
+color:#3D2C2C;
+}
+#tab-review h2{
+font-size:14px;
+font-weight:bold;
+color:#3D2C2C;
+text-transform: uppercase;
+padding:6px;
+}
+#tab-review b{
+font-size:14px;
+white-space:normal;
+padding:5px;
+top:auto;
+position:inherit;
+color: #3D2C2C;
+font-family: 'calibri_l';
+font-weight:normal;
+}
+#tab-review span{font-size:13px;}
+#tab-review .right a{    
+	background: none repeat scroll 0 0 #D42D01;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px #999999;
+    color: #FFFFFF;
+    float: left;
+    font-family: 'calibri_l';
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 8px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+	cursor:pointer;	
+}
+#tab-review .right a:hover{background: none repeat scroll 0 0 #000;}
+.tags{
+	border-top: 1px dashed #6B5D3B;
+	border-bottom: 1px dashed #6B5D3B;
+    color: #3D2C2C;
+    font-size: 20px;
+    margin-bottom: 10px;
+    overflow: auto;
+    padding: 0 5px 10px;
+}
+.tags b{font-weight:normal}
+.tags a{color: #3D2C2C;
+    cursor: pointer;
+    font-family: 'calibri_l';
+    font-size: 15px;
+    text-decoration: none;}
+.tags a:hover{ text-decoration:underline;}

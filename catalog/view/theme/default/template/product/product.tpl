@@ -289,7 +289,7 @@
     <br />
     <b><?php echo $entry_review; ?></b>
     <textarea name="text" cols="40" rows="8" style="width: 98%;"></textarea>
-    <span style="font-size: 11px;"><?php echo $text_note; ?></span><br />
+    <span><?php echo $text_note; ?></span><br />
     <br />
     <b><?php echo $entry_rating; ?></b> <span><?php echo $entry_bad; ?></span>&nbsp;
     <input type="radio" name="rating" value="1" />
