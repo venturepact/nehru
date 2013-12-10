@@ -9,10 +9,7 @@
     foreach ($breadcrumbs as $breadcrumb) { ?>
     <?php if($breadcrumb['separator']) echo '<li><span>>></span></li>'; ?><li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
     <?php } ?>
-  </ul>
-  
-  	
-  
+  </ul> 
   </div>
   <!--<h1><?php echo $heading_title; ?></h1>
   <?php if ($thumb || $description) { ?>
