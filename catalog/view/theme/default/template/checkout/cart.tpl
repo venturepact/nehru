@@ -25,6 +25,8 @@
     <?php if ($weight) { ?>
     &nbsp;(<?php echo $weight; ?>)
     <?php } ?>
+    
+    
   </h1>
   <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
     <div class="cart-info">

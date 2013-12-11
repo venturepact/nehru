@@ -2071,3 +2071,196 @@ table.radio tr.highlight:hover td {
 #content .buttons .center a:hover {
     background: none repeat scroll 0 0 #3D2C2C;
 }
+.cart-module #coupon,.cart-module #voucher,.cart-module #shipping{
+	font-size:14px;
+}
+.cart-module #coupon input[type="text"],.cart-module #voucher input[type="text"],.cart-module #shipping input[type="text"],.cart-module #shipping select{
+	background: none repeat scroll 0 0 #E2D4B9;
+    border: 1px solid #CDC49D;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px #ADA47E inset;
+    padding: 7px;
+    width: 30%;
+}
+.cart-module #shipping table{width:100%}
+.cart-module #shipping select{ width:50% !important;}
+.cart-module #shipping input[type="text"]{ width:48% !important;}
+.cart-module #coupon input[type="submit"],.cart-module #voucher input[type="submit"],.cart-module #shipping input[type="button"]{
+	background: none repeat scroll 0 0 #D42D01;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px #999999;
+    color: #FFFFFF !important;
+    cursor: pointer;
+    font-family: 'calibri_l';
+    font-size: 13px;
+    font-weight: bold;
+    padding: 8px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: auto;
+}
+.cart-module #coupon input[type="submit"]:hover,.cart-module #voucher input[type="submit"]:hover,.cart-module #shipping input[type="button"]:hover{
+	background: none repeat scroll 0 0 #3D2C2C;
+}
+/* checkout */
+#nehru_content #content{
+	width:97% !important;	
+}
+#nehru_content #content label b,#nehru_content #content #login b{font-size:14px; font-weight:normal;}
+
+#nehru_content #content input[type="button"] {
+    background: none repeat scroll 0 0 #D42D01;
+    border: medium none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px #999999;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 8px 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#nehru_content #content input[type="button"]:hover {
+    background: none repeat scroll 0 0 #000000;
+}
+#nehru_content #content p{
+	font-size:15px;
+	font-weight:normal;
+	padding:0 !important;
+	top:auto !important;
+	white-space:normal;
+	position:inherit;
+}
+#nehru_content #content a{
+    color: #3D2C2C;
+    font-family: 'calibri';
+    font-size: 13px;
+    padding-bottom: 10px;
+    text-decoration: none;	
+}
+#nehru_content #content a:hover{
+	 text-decoration:underline;
+}
+
+#nehru_content #content .checkout-heading a{
+	color:#fff;	
+}
+.checkout-heading {
+	
+	background-color: #9A9384;
+    border: 1px solid #8A8477;
+    color: #FFFFFF;
+	padding: 8px;
+	font-weight: normal;
+	font-size: 15px;
+	font-family: 'calibri';
+
+	margin-bottom: 15px;
+}
+.checkout-heading a {
+	float: right;
+	margin-top: 1px;
+	font-weight: normal;
+	text-decoration: none;
+}
+.checkout-content {
+	padding: 15px;
+	display: none;
+	overflow: auto;
+	background-color:#fff;
+	margin-bottom:15px;
+}
+.checkout-content .left {
+	float: left;
+	width: 48%;
+}
+.checkout-content .right {
+	float: right;
+	width: 48%;
+}
+.checkout-content .right input[type="text"],.checkout-content .right input[type="password"],.checkout-content .left input[type="text"],.checkout-content .left input[type="password"] ,.checkout-content .right select{
+	background: none repeat scroll 0 0 #E2D4B9;
+    border: 1px solid #CDC49D;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px #ADA47E inset;
+    padding: 7px;
+    width: 55%;
+}
+.checkout-content label{
+	float:none !important;
+	width:auto !important;	
+}
+.checkout-content .buttons {
+	clear: both;
+}
+.checkout-product table {
+	width: 100%;
+	border-collapse: collapse;
+	border-top: 1px solid #DDDDDD;
+	border-left: 1px solid #DDDDDD;
+	border-right: 1px solid #DDDDDD;
+	margin-bottom: 20px;
+}
+.checkout-product td {
+	padding: 7px;
+}
+.checkout-product thead td {
+	color: #4D4D4D;
+	font-weight: bold;
+	background-color: #F7F7F7;
+	border-bottom: 1px solid #DDDDDD;
+}
+.checkout-product thead .name, .checkout-product thead .model {
+	text-align: left;
+}
+.checkout-product thead .quantity, .checkout-product thead .price, .checkout-product thead .total {
+	text-align: right;
+}
+.checkout-product tbody td {
+	vertical-align: top;
+	border-bottom: 1px solid #DDDDDD;
+}
+.checkout-product tbody .name, .checkout-product tbody .model {
+	text-align: left;
+}
+.checkout-product tbody .quantity, .checkout-product tbody .price, .checkout-product tbody .total {
+	text-align: right;
+}
+.checkout-product tfoot td {
+	text-align: right;
+	border-bottom: 1px solid #DDDDDD;
+}
+.contact-info {
+	overflow: auto;
+}
+.contact-info .left {
+	float: left;
+	width: 48%;
+}
+.contact-info .right {
+	float: left;
+	width: 48%;
+}
+#payment-address .right a.colorbox{
+	background:none !important;
+	border-radius:none !important;
+	box-shadow:none !important;
+	text-transform:none !important;
+	font-weight:normal !important;
+	color: #3D2C2C !important;
+	margin:0 !important;
+	padding:0 !important;
+}
+.checkout-content b{
+	font-size:15px; font-weight:normal;
+}
+#shipping-method  textarea ,#payment-method textarea{
+background: none repeat scroll 0 0 #E2D4B9;
+    border: 1px solid #CDC49D;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px #ADA47E inset;
+    padding: 7px;
+    width: 55%;	
+}
