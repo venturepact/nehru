@@ -2243,7 +2243,7 @@ table.radio tr.highlight:hover td {
 	float: left;
 	width: 48%;
 }
-#payment-address .right a.colorbox{
+#payment-address .right a.colorbox,#payment-method .right a.colorbox{
 	background:none !important;
 	border-radius:none !important;
 	box-shadow:none !important;
@@ -2263,4 +2263,28 @@ background: none repeat scroll 0 0 #E2D4B9;
     box-shadow: 0 1px 1px #ADA47E inset;
     padding: 7px;
     width: 55%;	
+}#payment-method .right{
+width:55% !important;	
+}
+#nehru_success #content{
+	width:99% !important;
+}
+#nehru_success .buttons{
+	width:92% !important;
+}
+#nehru_success p{	
+    font-size: 15px;
+    font-weight: normal;
+    padding:0;
+    position:inherit;
+	color:#3D2C2C;
+    white-space: normal;  
+}
+#nehru_success p a{
+ 	font-weight:bold;
+	text-decoration:none;	
+	color:#3D2C2C;
+}
+#nehru_success p a:hover{
+	text-decoration:underline;	
 }
