@@ -12,11 +12,10 @@
                 </div>
                 <div class="footer_nav_outer">
                     <ul class="footer_nav">
-                        <li><a href="#">About Nehru's</a> </li>
-                        <li><a href="#">obs</a></li>
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Returns</a></li>
+                        <?php foreach ($informations as $information) { ?>
+      					<li><a href="<?php echo $information['href']; ?>"><?php echo $information['title']; ?></a></li>
+     					<?php } ?>
+                         <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
                     </ul>
                 </div>        
                 <div class="footer_icon_outer">

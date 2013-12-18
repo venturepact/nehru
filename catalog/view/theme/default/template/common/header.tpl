@@ -67,37 +67,15 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
                 <div id="nav_outer">
                 <ul class="head_nav">
                 <?php if ($categories) { ?>
-                	<?php foreach ($categories as $category) { ?>
-                    <li><a href="<?php echo $category['href']; ?>" class="active"><?php echo $category['name']; ?>
-                    <?php 
-                        	// sub categories
-                        	if ($category['children']) { ?>
-                            <span class="arrow_position" ><img src="image/data/red_arrow.png" alt="" /></span> 
-                            <?php
-                            }
-                            ?>
-                    		</a>
-                    	<?php 
-                        	// sub categories
-                        	if ($category['children']) { ?>
-                            <div>
-                                <?php for ($i = 0; $i < count($category['children']);) { ?>
-                                 <ul class="sub_nav">
-                                  <?php $j = $i + ceil(count($category['children']) / $category['column']); ?>
-                                  <?php for (; $i < $j; $i++) { ?>
-                                  <?php if (isset($category['children'][$i])) { ?>
-                                  <li><a href="<?php echo $category['children'][$i]['href']; ?>"><?php echo $category['children'][$i]['name']; ?></a></li>
-                                  <?php } ?>
-                                  <?php } ?>
-                                </ul>
-                                <?php } ?>
-                              </div>
-                              <?php } 
-                              // end of subcategories
-                              ?>
-                    </li>
+                	<?php
+                     $i = 0;
+                     foreach ($categories as $category) { 
+                     	if($i == 0)	{
+                     ?>
+                    <li><a href="<?php echo $category['href']; ?>" class="active">Jackets<?php //echo $category['name']; ?></li>
                 <?php
-                		
+                	$i++;
+                		}
                 	}
                 }
                 ?></ul>
@@ -114,11 +92,11 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
                 </div>
                 <div id="nav_outer_right">
                     <ul class="right_head_nav">                    
-                         <li><a href="<?php echo $home; ?>"><?php echo $text_home; ?></a></li>
+                         <!--<li><a href="<?php echo $home; ?>"><?php echo $text_home; ?></a></li>-->
                          <li><a href="<?php echo $wishlist; ?>" id="wishlist-total"><?php echo $text_wishlist; ?></a></li>
                          <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
                          <li><a href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a></li>
-                         <li><a href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a></li>
+                       <!--  <li><a href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a></li>-->
                      </ul> 
                 </div>
                 </div>                

@@ -1,4 +1,5 @@
 <?php echo $header; ?><?php echo $column_left; ?><?php echo $column_right; ?>
+<div id='nehru_contact'>
 <div id="content"><?php echo $content_top; ?>
   <div class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
@@ -61,4 +62,5 @@
     </div>
   </form>
   <?php echo $content_bottom; ?></div>
+ </div>
 <?php echo $footer; ?>

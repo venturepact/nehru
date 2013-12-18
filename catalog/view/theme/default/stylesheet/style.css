@@ -65,11 +65,11 @@ body{ margin:0; padding:0; font-size:12px; background:url(../../../../../image/d
 #footer_wrapper{ margin:0 auto; width:998px; margin-top:15px; padding-top:2px;}
 .number_outer{ float:left; width:250px; margin-right:25px;}
 .footer_nav{ margin:0;  padding:0; font-family:'calibri'; margin-top:3px; }
-.footer_nav li{ float:left; display:inline; margin-right:25px; margin-left:2px; font-size:14px; color:#fff;  }
+.footer_nav li{ float:left; display:inline; margin-right:15px; margin-left:2px; font-size:14px; color:#fff;  }
 .footer_nav li a{ text-decoration:none; color:#fff;  font-size:14px; font-family:'calibri'; padding-bottom:10px; }
 .footer_nav li a:hover{ color:#3d2c2c;}
 .footer_nav li .active{color:#3d2c2c;}
-.footer_nav_outer{ float:left; width:362px; margin-left:200px;}
+.footer_nav_outer{ float:left; width:550px;}
 .footer_icon_outer{ float:left; width:150px; margin-left:10px;}
 .small_outer{ float:left; width:25px; height:26px; margin-right:5px;}
 
@@ -2288,3 +2288,14 @@ width:55% !important;
 #nehru_success p a:hover{
 	text-decoration:underline;	
 }
+
+/* contact us page */
+#nehru_contact #content{
+	width:97% !important;	
+}
+
+/* contact us page */
+#nehru_information #content{
+	width:97% !important;	
+}
+

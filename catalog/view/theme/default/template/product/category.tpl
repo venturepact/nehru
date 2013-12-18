@@ -48,7 +48,7 @@
   <?php if ($products) { ?>
  <div class="product-filter">
      <!--<div class="display"><b><?php echo $text_display; ?></b> <?php echo $text_list; ?> <b>/</b> <a onclick="display('grid');"><?php echo $text_grid; ?></a></div>-->
-    <div class="limit"><b><?php echo $text_limit; ?></b>
+    <!--<div class="limit"><b><?php echo $text_limit; ?></b>
       <select onchange="location = this.value;">
         <?php foreach ($limits as $limits) { ?>
         <?php if ($limits['value'] == $limit) { ?>
@@ -58,8 +58,8 @@
         <?php } ?>
         <?php } ?>
       </select>
-    </div>
-    <div class="sort"><b><?php echo $text_sort; ?></b>
+    </div>-->
+    <!--<div class="sort"><b><?php echo $text_sort; ?></b>
       <select onchange="location = this.value;">
         <?php foreach ($sorts as $sorts) { ?>
         <?php if ($sorts['value'] == $sort . '-' . $order) { ?>
@@ -69,9 +69,9 @@
         <?php } ?>
         <?php } ?>
       </select>
-    </div>
+    </div>-->
   </div>
-  <div class="product-compare"><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></div>
+  <!--<div class="product-compare"><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></div>-->
   </div>
 
   <div class="product-list">
@@ -102,7 +102,7 @@
                                         <div class="cart_btn">  <input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" /></div>
                                         <div class="add_detail">
                                             <div class="wishlist"><a onclick="addToWishList('<?php echo $product['product_id']; ?>');"><?php echo $button_wishlist; ?></a></div>
-                                            <div class="compare"><a onclick="addToCompare('<?php echo $product['product_id']; ?>');"><?php echo $button_compare; ?></a></div>
+                                            <!--<div class="compare"><a onclick="addToCompare('<?php echo $product['product_id']; ?>');"><?php echo $button_compare; ?></a></div>-->
                                         </div>
                                     </div>
                                 </div>
