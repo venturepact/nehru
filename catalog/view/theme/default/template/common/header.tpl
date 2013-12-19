@@ -72,7 +72,7 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
                      foreach ($categories as $category) { 
                      	if($i == 0)	{
                      ?>
-                    <li><a href="<?php echo $category['href']; ?>" class="active">Jackets<?php //echo $category['name']; ?></li>
+                    <li><a href="<?php echo $category['href']; ?>" class="active">Jackets<?php //echo $category['name']; ?></a></li>
                 <?php
                 	$i++;
                 		}

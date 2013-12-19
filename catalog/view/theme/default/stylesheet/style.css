@@ -33,7 +33,7 @@ body{ margin:0; padding:0; font-size:12px; background:url(../../../../../image/d
 .head_nav li .active{color:#000;}
 .head_nav li:hover .sub_nav{ display:block }
 .arrow_position{ margin-left:5px; padding-bottom:10px;}
-
+h1{color: #3D2C2C;font-family: 'calibri';font-size: 20px;}
 .sub_nav{ margin:0; padding:0; float:left; display:none; width:100px; margin-top:5px;  padding-left:0px; font-family:'calibri'; background:#f6f1df; position:absolute; z-index: 999999999;}
 .sub_nav li{ float:left; display:block; width:100%; border-bottom:1px solid #CCC;  }
 .sub_nav li a{float:left; text-decoration:none; color:#3d2c2c;  font-size:13px; font-family:'calibri'; padding:3px; width:92%  }
@@ -2270,7 +2270,8 @@ width:55% !important;
 	width:99% !important;
 }
 #nehru_success .buttons{
-	width:92% !important;
+	width:93% !important;
+	border: 2px solid #CDC49D ;
 }
 #nehru_success p{	
     font-size: 15px;
@@ -2294,8 +2295,51 @@ width:55% !important;
 	width:97% !important;	
 }
 
-/* contact us page */
-#nehru_information #content{
-	width:97% !important;	
+#nehru_contact #content .contact-info{
+	overflow:visible;	
 }
 
+#nehru_contact #content .content{
+	border: 2px solid #CDC49D ;
+	width:97%;
+}
+#nehru_contact #content .content{
+	color: #3D2C2C;   
+    font-family: 'calibri';
+    font-size: 14px;
+    font-weight: normal;  
+}
+#nehru_contact #content form .buttons{
+	border:2px solid #CDC49D;
+	width:100%;
+	float:left;
+	margin-bottom:0px;	
+}
+#nehru_contact #content .buttons .right{
+	margin:8px;
+}
+/* information page like about us etc. */
+#nehru_information #content{
+	width:100% !important;	
+}
+#nehru_information #content .buttons{
+	border:2px solid #CDC49D;
+	width:92%;
+	float:left;
+	margin-bottom:0px;	
+}
+#nehru_information #content .buttons .right{
+	margin:8px;
+}
+#nehru_information #content .content{
+	border: 2px solid #CDC49D ;
+	width:92%;
+}
+#nehru_information #content .content p{
+	font-size:15px;
+	font-weight:normal;
+	padding:0 !important;
+	top:auto !important;
+	white-space:normal;
+	position:inherit;
+}
