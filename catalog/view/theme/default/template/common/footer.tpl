@@ -1,7 +1,8 @@
 </div>
 </div>  
         </div>
- <!--Footer Section -->    
+ <!--Footer Section -->   
+ <div style="clear:both;"></div> 
         <div id="footer_outer_listpage">
             <div id="footer_wrapper" >
                 <div class="number_outer">

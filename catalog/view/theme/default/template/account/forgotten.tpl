@@ -4,14 +4,18 @@
 <?php } ?>
 <?php echo $column_left; ?><?php echo $column_right; ?>
 <div id="content"><?php echo $content_top; ?>
-  <div class="breadcrumb">
-    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
-    <?php } ?>
+   <div class="breadcrumbs_outer">
+    <ul class="breadcrumbs">
+      <?php   
+    	foreach ($breadcrumbs as $breadcrumb) { ?>
+      	<?php if($breadcrumb['separator']) echo '<li><span>>></span></li>'; ?>
+      	<li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
+      <?php } ?>
+    </ul>
   </div>
   <h1><?php echo $heading_title; ?></h1>
   <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
-    <p><?php echo $text_email; ?></p>
+  <!--  <p><?php echo $text_email; ?></p>-->
     <h2><?php echo $text_your_email; ?></h2>
     <div class="content">
       <table class="form">

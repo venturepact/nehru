@@ -16,11 +16,13 @@
     <?php } ?>
   </div>-->
    <div class="breadcrumbs_outer">
-    <ul class="breadcrumbs">
-    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <?php if($breadcrumb['separator']) echo '<li><span>>></span></li>'; ?><li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
-    <?php } ?>
-  </ul></div>
+    	<ul class="breadcrumbs">
+    		<?php foreach ($breadcrumbs as $breadcrumb) { ?>
+   				<?php if($breadcrumb['separator']) echo '<li><span>>></span></li>'; ?>
+                <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
+    		<?php } ?>
+  		</ul>
+  </div>
   <h1><?php echo $heading_title; ?>
     <?php if ($weight) { ?>
     &nbsp;(<?php echo $weight; ?>)
