@@ -215,7 +215,7 @@
     <div class="right"><a href="<?php echo $checkout; ?>" class="button"><?php echo $button_checkout; ?></a></div>
     <div class="center"><a href="<?php echo $continue; ?>" class="button"><?php echo $button_shopping; ?></a></div>
   </div>
-  <?php echo $content_bottom; ?></div></div>
+  <?php echo $content_bottom; ?></div><div style='height:50px;float:left;'>&nbsp;</div></div>
 <script type="text/javascript"><!--
 $('input[name=\'next\']').bind('change', function() {
 	$('.cart-module > div').hide();
