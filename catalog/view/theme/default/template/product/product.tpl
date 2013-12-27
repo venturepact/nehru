@@ -1,4 +1,5 @@
 <?php echo $header; ?><?php echo $column_left; ?><?php echo $column_right; ?>
+
 <div id="fb-root"></div>
 <script>/*(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -6,20 +7,35 @@
   js = d.createElement(s); js.id = id;
   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=590770994306002";
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));*/</script>
+}(document, 'script', 'facebook-jssdk'));*/</script> 
+<script src="catalog/view/javascript/zoom/jquery.jqzoom-core.js" type="text/javascript"></script>
+<link rel="stylesheet" href="catalog/view/javascript/zoom/jquery.jqzoom.css" type="text/css">
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.jqzoom').jqzoom({	
+		 zoomType: 'standard',		
+		 lens:true,		
+		 preloadImages: false,		
+		 alwaysOn:false	
+	 });
+});
+</script>
 <div id="content"><?php echo $content_top; ?>
-    <div class="breadcrumbs_outer">
+  <div class="breadcrumbs_outer">
     <ul class="breadcrumbs">
-    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-     <?php if($breadcrumb['separator']) echo '<li><span>>></span></li>'; ?><li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
-    <?php } ?>
-  </ul></div>
+      <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+      <?php if($breadcrumb['separator']) echo '<li><span>>></span></li>'; ?>
+      <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
+      <?php } ?>
+    </ul>
+  </div>
   <div style='width:100%;overflow:hidden;'>&nbsp;</div>
   <div class="product-info">
     <?php if ($thumb || $images) { ?>
     <div class="left">
       <?php if ($thumb) { ?>
-      <div class="image"><a href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>" class="colorbox"><img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" id="image" /></a></div>
+     <!-- <div class="image"><a href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>" class="colorbox"><img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" id="image" /></a></div>-->
+     <div class="image"><a href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>" class="jqzoom colorbox" rel='gal1'><img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" id="image" /></a></div>
       <?php } ?>
       <?php if ($images) { ?>
       <div class="image-additional">
@@ -31,7 +47,7 @@
     </div>
     <?php } ?>
     <div class="right">
-    <h1><?php echo $heading_title; ?></h1>
+      <h1><?php echo $heading_title; ?></h1>
       <div class="description">
         <?php if ($manufacturer) { ?>
         <span><?php echo $text_manufacturer; ?></span> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a><br />
@@ -67,19 +83,18 @@
       <?php } ?>
       <?php if ($profiles): ?>
       <div class="option">
-          <h2><span class="required">*</span><?php echo $text_payment_profile ?></h2>
-          <br />
-          <select name="profile_id">
-              <option value=""><?php echo $text_select; ?></option>
-              <?php foreach ($profiles as $profile): ?>
-              <option value="<?php echo $profile['profile_id'] ?>"><?php echo $profile['name'] ?></option>
-              <?php endforeach; ?>
-          </select>
-          <br />
-          <br />
-          <span id="profile-description"></span>
-          <br />
-          <br />
+        <h2><span class="required">*</span><?php echo $text_payment_profile ?></h2>
+        <br />
+        <select name="profile_id">
+          <option value=""><?php echo $text_select; ?></option>
+          <?php foreach ($profiles as $profile): ?>
+          <option value="<?php echo $profile['profile_id'] ?>"><?php echo $profile['name'] ?></option>
+          <?php endforeach; ?>
+        </select>
+        <br />
+        <br />
+        <span id="profile-description"></span> <br />
+        <br />
       </div>
       <?php endif; ?>
       <?php if ($options) { ?>
@@ -234,9 +249,8 @@
           <input type="hidden" name="product_id" size="2" value="<?php echo $product_id; ?>" />
           &nbsp;
           <input type="button" value="<?php echo $button_cart; ?>" id="button-cart" class="button" />
-          <span>&nbsp;&nbsp;<?php echo $text_or; ?>&nbsp;&nbsp;</span>
-          <span class="links"><a onclick="addToWishList('<?php echo $product_id; ?>');"><?php echo $button_wishlist; ?></a><br />
-            <!--<a onclick="addToCompare('<?php echo $product_id; ?>');"><?php echo $button_compare; ?></a></span>-->
+          <span>&nbsp;&nbsp;<?php echo $text_or; ?>&nbsp;&nbsp;</span> <span class="links"><a onclick="addToWishList('<?php echo $product_id; ?>');"><?php echo $button_wishlist; ?></a><br />
+          <!--<a onclick="addToCompare('<?php echo $product_id; ?>');"><?php echo $button_compare; ?></a></span>--> 
         </div>
         <?php if ($minimum > 1) { ?>
         <div class="minimum"><?php echo $text_minimum; ?></div>
@@ -245,26 +259,24 @@
       <?php if ($review_status) { ?>
       <div class="review">
         <div><img src="catalog/view/theme/default/image/stars-<?php echo $rating; ?>.png" alt="<?php echo $reviews; ?>" />&nbsp;&nbsp;<a onclick="$('a[href=\'#tab-review\']').trigger('click');"><?php echo $reviews; ?></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a onclick="$('a[href=\'#tab-review\']').trigger('click');"><?php echo $text_write; ?></a></div>
-        <div class="share"><!-- AddThis Button BEGIN -->
-         <!-- <div class="addthis_default_style"><a class="addthis_button_compact"><?php echo $text_share; ?></a> <a class="addthis_button_email"></a><a class="addthis_button_print"></a> <a class="addthis_button_facebook"></a> <a class="addthis_button_twitter"></a></div>
+        <div class="share"><!-- AddThis Button BEGIN --> 
+          <!-- <div class="addthis_default_style"><a class="addthis_button_compact"><?php echo $text_share; ?></a> <a class="addthis_button_email"></a><a class="addthis_button_print"></a> <a class="addthis_button_facebook"></a> <a class="addthis_button_twitter"></a></div>
           <script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js"></script> 
           <!-- AddThis Button END --> 
           <!--<div class="fb-like" data-href="http://nehru.venturepact.com" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>-->
-<div id='fb_twitter'>
-<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fnehru.venturepact.com&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=25&amp;appId=590770994306002" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:25px;" allowTransparency="true"></iframe>
-
-<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="princessfily">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-</div>
-
-<!-- end of facebook like-->
+          <div id='fb_twitter'>
+            <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fnehru.venturepact.com&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=25&amp;appId=590770994306002" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:25px;" allowTransparency="true"></iframe>
+            <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="princessfily">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script> 
+          </div>
+          
+          <!-- end of facebook like--> 
         </div>
       </div>
       <?php } ?>
     </div>
   </div>
-<!-- facebook like -->
-
-
+  <!-- facebook like -->
+  
   <div id="tabs" class="htabs"><a href="#tab-description"><?php echo $tab_description; ?></a>
     <?php if ($attribute_groups) { ?>
     <a href="#tab-attribute"><?php echo $tab_attribute; ?></a>
@@ -359,7 +371,7 @@
   </div>
   <?php } ?>
   <?php if ($tags) { ?>
- <!-- <div class="tags"><b><?php echo $text_tags; ?></b>
+  <!-- <div class="tags"><b><?php echo $text_tags; ?></b>
     <?php for ($i = 0; $i < count($tags); $i++) { ?>
     <?php if ($i < (count($tags) - 1)) { ?>
     <a href="<?php echo $tags[$i]['href']; ?>"><?php echo $tags[$i]['tag']; ?></a>,
