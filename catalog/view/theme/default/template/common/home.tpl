@@ -56,5 +56,5 @@ $(document).ready(function(){
                 You have access to a wide variety of resources that will help you make the most of your Adobe software. Some of these resources are installed on your computer during the setup process; additional helpful samples and documents are included on the installation or content. 
                 </div>
                 <!--Text Section End -->
-                </div>
+               <?php echo $content_bottom; ?> </div>
 <?php echo $footer; ?>
