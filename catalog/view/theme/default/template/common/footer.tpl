@@ -1,14 +1,13 @@
 </div>
 </div>  
         </div>
- <!--Footer Section -->   
- <div style="clear:both;"></div> 
+ <!--Footer Section -->    
         <div id="footer_outer_listpage">
             <div id="footer_wrapper" >
                 <div class="number_outer">
                     <ul class="footer_nav">
                         <li>Help 1-234-456-6789</li>
-                        <li><a href="#">Email Us</a></li>
+                        <li><a href="mailto:doscopratham@gmail.com">Email Us</a></li>
                     </ul>
                 </div>
                 <div class="footer_nav_outer">

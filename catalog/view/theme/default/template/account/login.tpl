@@ -43,12 +43,12 @@
           <input type="submit" value="<?php echo $button_login; ?>" class="button" />
           <?php if ($redirect) { ?>
           <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
-          <?php } ?>
+          <?php } ?><?php echo $content_bottom; ?>
         </div>
       </form>
     </div>
   </div>
-  <?php echo $content_bottom; ?></div>
+  </div>
 <script type="text/javascript"><!--
 $('#login input').keydown(function(e) {
 	if (e.keyCode == 13) {

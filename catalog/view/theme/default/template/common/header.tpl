@@ -72,7 +72,7 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
                      foreach ($categories as $category) { 
                      	if($i == 0)	{
                      ?>
-                    <li><a href="<?php echo $category['href']; ?>" class="active">Jackets<?php //echo $category['name']; ?></a></li>
+                    <li><a href="<?php echo $category['href']; ?>" class="active">Our 2014 collection<?php //echo $category['name']; ?></a></li>
                 <?php
                 	$i++;
                 		}
@@ -81,7 +81,7 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
                 ?></ul>
                 </div>
                 <div class="cart_outerr">
-                	<?php echo $cart; ?>
+                	
                     <div id="welcome">
                         <?php if (!$logged) { ?>
                         <?php echo $text_welcome; ?>
@@ -93,11 +93,12 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
                 <div id="nav_outer_right">
                     <ul class="right_head_nav">                    
                          <!--<li><a href="<?php echo $home; ?>"><?php echo $text_home; ?></a></li>-->
-                         <li><a href="<?php echo $wishlist; ?>" id="wishlist-total"><?php echo $text_wishlist; ?></a></li>
+                         <!--<li><a href="<?php echo $wishlist; ?>" id="wishlist-total"><?php echo $text_wishlist; ?></a></li>-->
                          <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
-                         <li><a href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a></li>
+                        <!-- <li><a href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a></li>-->
                        <!--  <li><a href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a></li>-->
-                     </ul> 
+                     </ul>
+                     <?php echo $cart; ?>
                 </div>
                 </div>                
                 <!--Text Section -->             

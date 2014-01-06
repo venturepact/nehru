@@ -7,6 +7,7 @@ define('HTTP_CATALOG', 'http://localhost/nehru/');
 define('HTTPS_SERVER', 'http://localhost/nehru/admin/');
 define('HTTPS_CATALOG', 'http://localhost/nehru/');
 
+$document_root = 'C:\www\nehru.venturepact.com';
 // DIR
 define('DIR_APPLICATION', 'D:\xampp\htdocs\nehru/admin/');
 define('DIR_SYSTEM', 'D:\xampp\htdocs\nehru/system/');

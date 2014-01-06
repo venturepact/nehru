@@ -1,10 +1,11 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://localhost/nehru/');
+define('HTTP_SERVER', 'http://172.17.60.222/nehru/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://localhost/nehru/');
+define('HTTPS_SERVER', 'http://172.17.60.222/nehru/');
 
+$document_root = 'C:\www\nehru.venturepact.com';
 // DIR
 define('DIR_APPLICATION', 'D:\xampp\htdocs\nehru/catalog/');
 define('DIR_SYSTEM', 'D:\xampp\htdocs\nehru/system/');

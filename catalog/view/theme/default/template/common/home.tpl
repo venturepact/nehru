@@ -12,7 +12,15 @@ $(document).ready(function(){
 					
 	});
 	
+	
+	
 });
+function position_scroller(){  
+   
+   /* position of scroll of screen from top to 500px*/
+   $("html, body").animate({ scrollTop: 650 }, 1600);
+    return false;  
+}
 </script>
 <style>
 #content{width:100% !important;}
@@ -31,7 +39,7 @@ $(document).ready(function(){
                                     The stylish rich in design royal look.<br/> Best of the ethnic cotton fabric</p>
                                     <p class="teaser turky  "		
                                     data-position="210,365" data-in="left" data-step="3" data-delay="" data-out="none">
-                                    <a href="#" class="white_button z_set" >shop now!</a></p>
+                                    <!--<a href="#" class="white_button z_set" >shop now!</a>--></p>
                                     
                                     <img src="image/data/banner.png" data-position="20,330" data-in="topLeft" data-delay="" data-out="" class="bg_img">
                                     
@@ -41,7 +49,7 @@ $(document).ready(function(){
                                     data-position="212,740," data-in="left" data-step="5" data-delay="" data-out="none">collection</p>
                                     <p class="teaser turky "		
                                     data-position="165,845" data-in="left" data-step="6" data-delay="" data-out="none">
-                                    <a href="#" class="white_button" >view collection!</a></p>
+                                    <a href="javascript:void(0);" onclick="position_scroller()" class="white_button">view collection!</a></p>
                                 </div>
                             </div>
                         </div>
@@ -56,5 +64,6 @@ $(document).ready(function(){
                 You have access to a wide variety of resources that will help you make the most of your Adobe software. Some of these resources are installed on your computer during the setup process; additional helpful samples and documents are included on the installation or content. 
                 </div>
                 <!--Text Section End -->
+                <div style="clear:both;"></div>
                <?php echo $content_bottom; ?> </div>
 <?php echo $footer; ?>

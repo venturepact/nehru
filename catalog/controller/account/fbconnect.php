@@ -10,7 +10,7 @@ class ControllerAccountFbconnect extends Controller {
 
 		$this->language->load('module/fbconnect');
 
-		if(!isset($this->fbconnect)){						
+		if(!isset($this->fbconnect)){			
 			require_once(DIR_SYSTEM . 'vendor/facebook-sdk/facebook.php');
 
 			$this->fbconnect = new Facebook(array(
@@ -23,7 +23,6 @@ class ControllerAccountFbconnect extends Controller {
 		$_SERVER = $this->clean_decode($_SERVER);
 
 		$fbuser = $this->fbconnect->getUser();
-		//echo '<pre>';print_r($fbuser);die;
 		$fbuser_profile = null;
 		if ($fbuser){
 			try {
@@ -69,6 +68,8 @@ class ControllerAccountFbconnect extends Controller {
 				$add_data['fax'] = '';
 				$add_data['telephone'] = '';
 				$add_data['company'] = '';
+				$add_data['company_id'] = '';
+				$add_data['tax_id'] = '';
 				$add_data['address_1'] = '';
 				$add_data['address_2'] = '';
 				$add_data['city'] = '';

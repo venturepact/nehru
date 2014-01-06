@@ -1,4 +1,4 @@
 <?php
 // Heading 
-$_['heading_title'] = 'Facebook Connect';
+$_['heading_title'] = 'Connect With Facebook';
 ?>

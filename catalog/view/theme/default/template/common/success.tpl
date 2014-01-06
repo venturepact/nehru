@@ -1,6 +1,6 @@
 <?php echo $header; ?><?php echo $column_left; ?><?php echo $column_right; ?>
 <div id='nehru_success'>
-<div id="content" <?php if($_SERVER['QUERY_STRING']=='route=account/logout') echo 'style="width:78% !important;"'?>><?php echo $content_top; ?>
+<div id="content"><?php echo $content_top; ?>
   <div class="breadcrumbs_outer">
     <ul class="breadcrumbs">
       <?php   

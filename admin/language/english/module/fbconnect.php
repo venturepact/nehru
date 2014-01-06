@@ -11,10 +11,10 @@ $_['text_column_left']    = 'Column Left';
 $_['text_column_right']   = 'Column Right';
 
 // Entry
-$_['entry_creator']      = 'Created By Leon Li';
-$_['entry_updated']      = 'Demo:<br /><a href="http://www.leonli.net/demo/opencart/index.php?route=account/login" target="_blank">Click Here</a>';
+$_['entry_creator']      = 'Created By BIDatw.com';
+$_['entry_updated']      = 'Demo:<br /><a href="https://www.bidatw.com/index.php?route=account/login" target="_blank">Click Here</a>';
 $_['entry_version']      = 'Version:<br /><span class="help">1.0.1</span>';
-$_['entry_licence']      = 'Licence:<br /><span class="help">Free to use under the opencart license.</span>';
+$_['entry_licence']      = 'Licence:<br /><span class="help"> www.BIDatw.com - All Rights Reserved</span>';
 $_['entry_apikey']        = 'Facebook API Key:';
 $_['entry_apisecret']     = 'Facebook API Secret:';
 $_['entry_pwdsecret']     = 'Password Encryption Key:';
